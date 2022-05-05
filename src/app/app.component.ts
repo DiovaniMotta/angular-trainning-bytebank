@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransferenciaService } from './services/transferencia.service';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  title = 'angular-trainning-bytebank';
-
-  transferencias: any[] = [];
-
-  constructor(){
-
-  }
-
   ngOnInit(): void {
 
   }
 
+  title = 'angular-trainning-bytebank';
 
-  recebeTransferencia($event: any) {
-    this.transferencias.push($event);
-  }
 }
